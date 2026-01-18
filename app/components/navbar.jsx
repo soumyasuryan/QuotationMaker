@@ -11,6 +11,7 @@ export default function NavBar() {
         
         {/* Logo */}
         <Image
+        className="sm:ml-5"
           src="/web-logo.png"
           alt="Logo"
           width={80}
@@ -18,10 +19,10 @@ export default function NavBar() {
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 items-center">
-          <li className="hover:underline text-lg cursor-pointer">Home</li>
-          <li className="hover:underline text-lg cursor-pointer">About</li>
-          <li className="hover:underline text-lg cursor-pointer">Contact</li>
+        <ul className="hidden md:flex gap-10 items-center sm:mr-10">
+          <a className="hover:underline text-lg cursor-pointer" href="/">Home</a>
+          <a className="hover:underline text-lg cursor-pointer" href="/about">About</a>
+          <a className="hover:underline text-lg cursor-pointer" href="contact/">Contact</a>
         </ul>
 
         {/* Hamburger (Mobile Only) */}
@@ -41,9 +42,9 @@ export default function NavBar() {
       {/* Mobile Menu */}
       {open && (
         <ul className="md:hidden mt-4 flex flex-col gap-4 text-center">
-          <li className="hover:underline text-lg">Home</li>
-          <li className="hover:underline text-lg">About</li>
-          <li className="hover:underline text-lg">Contact</li>
+          <a className="hover:underline text-lg">Home</a>
+          <a className="hover:underline text-lg">About</a>
+          <a className="hover:underline text-lg">Contact</a>
         </ul>
       )}
     </div>

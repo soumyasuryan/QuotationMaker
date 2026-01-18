@@ -16,7 +16,7 @@ export default function GeneratePdfButton({ items }) {
   const [quotationInfo, setQuotationInfo] = useState({
     createdBy: "",
     contactNo: "",
-    gstNo: "",
+    gstNo: "07AAACV0540M1ZD",
     remarks: "Valid for 15 days"
   });
 
@@ -112,19 +112,19 @@ export default function GeneratePdfButton({ items }) {
       <div>
         <h2 className="font-medium">Customer Info</h2>
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="Name"
           value={customer.name}
           onChange={e => setCustomer({ ...customer, name: e.target.value })}
         />
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="Address"
           value={customer.address}
           onChange={e => setCustomer({ ...customer, address: e.target.value })}
         />
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="Phone"
           value={customer.phone}
           onChange={e => setCustomer({ ...customer, phone: e.target.value })}
@@ -135,25 +135,25 @@ export default function GeneratePdfButton({ items }) {
       <div>
         <h2 className="font-medium">Quotation Info</h2>
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="Created By"
           value={quotationInfo.createdBy}
           onChange={e => setQuotationInfo({ ...quotationInfo, createdBy: e.target.value })}
         />
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="Contact No"
           value={quotationInfo.contactNo}
           onChange={e => setQuotationInfo({ ...quotationInfo, contactNo: e.target.value })}
         />
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg"
           placeholder="GST Number"
           value={quotationInfo.gstNo}
           onChange={e => setQuotationInfo({ ...quotationInfo, gstNo: e.target.value })}
         />
         <input
-          className="w-90 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg mt-2"
+          className="w-40 sm:w-auto my-2 px-3 py-2 border mr-2 rounded-lg mt-2"
           placeholder="Remarks"
           value={quotationInfo.remarks}
           onChange={e => setQuotationInfo({ ...quotationInfo, remarks: e.target.value })}
