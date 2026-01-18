@@ -92,7 +92,7 @@ export async function POST(req) {
   doc.fillColor("#000")
     .font("bold")
     .fontSize(11)
-    .text("QUOTATION / ESTIMATION", 30, y + 4, {
+    .text("QUOTATION", 30, y + 4, {
       align: "center",
       width: 535
     });
