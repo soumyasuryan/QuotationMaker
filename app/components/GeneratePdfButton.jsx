@@ -57,13 +57,14 @@ export default function GeneratePdfButton({ items }) {
     }
 
     setError("");
+   
 
     const mappedItems = items.map(item => ({
       code: item.model_number,
       model: item.model_number,
       description: formatSpecifications(item.specifications),
       qty: item.qty ?? 1,
-      price: item.price,
+      price: item.price + (item.price * (item.margin ?? 0)) / 100,
       image_url: item.image_url
     }));
 
@@ -76,7 +77,7 @@ export default function GeneratePdfButton({ items }) {
       },
       customer
     };
-
+    console.log(payload)
     const res = await fetch("/api/generate-pdf", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -167,17 +168,16 @@ export default function GeneratePdfButton({ items }) {
 
       {/* Generate Button */}
       <div className="flex justify-center">
-      <button
-        onClick={generate}
-        disabled={!isFormValid()}
-        className={`px-6 py-3 mb-20 rounded-lg border ${
-          isFormValid()
-            ? "bg-black text-white hover:bg-gray-100 hover:text-black"
-            : "bg-gray-300 text-gray-600 cursor-not-allowed"
-        }`}
-      >
-        Generate Quotation PDF
-      </button>
+        <button
+          onClick={generate}
+          disabled={!isFormValid()}
+          className={`px-6 py-3 mb-20 rounded-lg border ${isFormValid()
+              ? "bg-black text-white hover:bg-gray-100 hover:text-black"
+              : "bg-gray-300 text-gray-600 cursor-not-allowed"
+            }`}
+        >
+          Generate Quotation PDF
+        </button>
       </div>
 
     </div>
