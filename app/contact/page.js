@@ -42,7 +42,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen px-6 pb-12">
         <NavBar></NavBar>
-      <div className="mx-auto max-w-3xl dark:bg-black rounded-xl shadow-sm p-8">
+      <div className="mx-auto max-w-3xl rounded-xl shadow-sm p-8">
 
         <h1 className="text-3xl font-bold text-gray-300 mb-6">
           Contact Us

@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen px-6">
         <NavBar></NavBar>
-      <div className="mx-auto max-w-4xl dark:bg-black rounded-xl shadow-sm p-8 mt-20 pb-50">
+      <div className="mx-auto max-w-4xl rounded-xl shadow-sm p-8 mt-20 pb-50">
         
         <h1 className="text-3xl font-bold text-gray-300 mb-6">
           About the Quotation Maker
