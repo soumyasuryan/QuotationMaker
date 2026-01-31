@@ -30,7 +30,7 @@ export default function QuotationMaker() {
   return (
     <div>
         <Navbar></Navbar>
-    <div className="p-6 max-w-6xl mx-auto ">
+    <div className="p-6 max-w-6xl mx-auto pb-10 ">
         
       <h1 className="text-4xl mb-4 text-center"> <span className="text-gray-300 mb-20">Quotation</span> Maker</h1>
 
