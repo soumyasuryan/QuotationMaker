@@ -2,7 +2,7 @@ import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 export default function AboutPage() {
   return (
-    <div className="min-h-screen dark:bg-black px-6">
+    <div className="min-h-screen px-6">
         <NavBar></NavBar>
       <div className="mx-auto max-w-4xl dark:bg-black rounded-xl shadow-sm p-8 mt-20 pb-50">
         

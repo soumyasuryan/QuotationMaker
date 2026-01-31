@@ -40,7 +40,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen dark:bg-black px-6 pb-12">
+    <div className="min-h-screen px-6 pb-12">
         <NavBar></NavBar>
       <div className="mx-auto max-w-3xl dark:bg-black rounded-xl shadow-sm p-8">
 
