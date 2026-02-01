@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-position:right;
   background-size: 55vw;
+  
 }
 @media (max-width:1000px) {
   .myContainer{ 
